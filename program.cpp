@@ -6,9 +6,10 @@
 ** Creative Commons, either version 4 of the License, or (at your
 ** option) any later version.
 ******************************************************************/
-#define GLEW_STATIC
+
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
+
 
 #include "game.h"
 #include "resource_manager.h"
@@ -31,9 +32,9 @@ int main(int argc, char* argv[])
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-	glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
+	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 
-	GLFWwindow* window = glfwCreateWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "Breakout", nullptr, nullptr);
+	GLFWwindow* window = glfwCreateWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "2DOpenGL", NULL, NULL);
 	if (window == NULL)
 	{
 		std::cout << "Failed to create GLFW window" << std::endl;
@@ -74,7 +75,7 @@ int main(int argc, char* argv[])
 		lastFrame = currentFrame;
 		glfwPollEvents();
 
-		//deltaTime = 0.001f;
+		deltaTime = 0.001f;
 		// Manage user input
 		Breakout.ProcessInput(deltaTime);
 

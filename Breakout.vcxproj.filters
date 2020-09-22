@@ -13,24 +13,54 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Shader">
-      <UniqueIdentifier>{ec40090f-3ce5-45cc-82b0-6ab70da97af3}</UniqueIdentifier>
+    <Filter Include="资源加载">
+      <UniqueIdentifier>{97a30c87-30f9-4cf1-b942-0221506ca640}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源加载\头文件">
+      <UniqueIdentifier>{ebffe16b-d0a6-406a-bfe4-61de027b596d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源加载\源文件">
+      <UniqueIdentifier>{402dcfb8-e7f0-42e4-b55d-99714d9d169e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="game.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="program.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resource_manager.cpp">
+      <Filter>资源加载\源文件</Filter>
+    </ClCompile>
     <ClCompile Include="shader.cpp">
-      <Filter>Shader</Filter>
+      <Filter>资源加载\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stb_image.cpp">
+      <Filter>资源加载\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="texture.cpp">
+      <Filter>资源加载\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="glad.c">
+      <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="game.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="resource_manager.h">
+      <Filter>资源加载\头文件</Filter>
+    </ClInclude>
     <ClInclude Include="shader.h">
-      <Filter>Shader</Filter>
+      <Filter>资源加载\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_image.h">
+      <Filter>资源加载\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="texture.h">
+      <Filter>资源加载\头文件</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

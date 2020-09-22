@@ -1,7 +1,6 @@
 #pragma once
-
 #include <glad/glad.h>
-#include <GLFW/glfw3.h>
+
 
 // 枚举游戏状态类型
 enum GameState {
