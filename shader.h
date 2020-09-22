@@ -16,7 +16,9 @@ class Shader
 public:
 	GLuint ID;
 	// Constructor
-	Shader() {}
+	Shader() {
+		this->ID = glCreateProgram();
+	}
 	// Sets the current shader as active
 	Shader& Use();
 	// Compiles shader

@@ -38,7 +38,7 @@ void Shader::Compile(const GLchar* vertexSource, const GLchar* fragmentSource, c
 		checkCompileErrors(gShader, "GEOMETRY");
 	}
 	// Shader Program
-	this->ID = glCreateProgram();
+	//this->ID = glCreateProgram();
 	glAttachShader(this->ID, sVertex);
 	glAttachShader(this->ID, sFragment);
 	if (geometrySource != nullptr)

@@ -75,7 +75,7 @@ int main(int argc, char* argv[])
 		lastFrame = currentFrame;
 		glfwPollEvents();
 
-		deltaTime = 0.001f;
+		//deltaTime = 0.001f;
 		// Manage user input
 		Breakout.ProcessInput(deltaTime);
 
