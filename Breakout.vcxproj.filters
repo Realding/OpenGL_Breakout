@@ -66,6 +66,9 @@
     <ClCompile Include="ball_object.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="particle_generator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="game.h">
@@ -95,6 +98,12 @@
     <ClInclude Include="ball_object.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="particle_generator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="levels\one.lvl">
@@ -115,6 +124,12 @@
     <None Include="shaders\sprite.vs">
       <Filter>资源文件\shaders</Filter>
     </None>
+    <None Include="particle.vs">
+      <Filter>资源文件\shaders</Filter>
+    </None>
+    <None Include="shaders\particle.fs">
+      <Filter>资源文件\shaders</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Image Include="textures\awesomeface.png">
@@ -132,5 +147,10 @@
     <Image Include="textures\paddle.png">
       <Filter>资源文件\textures</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Breakout.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

@@ -2,6 +2,7 @@
 #include <glad/glad.h>
 #include <vector>
 #include "game_level.h"
+#include "particle_generator.h"
 
 
 // 枚举游戏状态类型
@@ -10,6 +11,18 @@ enum GameState {
 	GAME_MENU,
 	GAME_WIN
 };
+
+// 枚举四种可能的碰撞方向
+enum Direction {
+	UP,
+	RIGHT,
+	DOWN,
+	LEFT
+};
+
+// 定义碰撞时的数据
+typedef std::tuple<GLboolean, Direction, glm::vec2> Collision; // <是否碰撞?, 方向?, difference vector center - closest point>
+
 
 // 初始化挡板的大小
 const glm::vec2 PLAYER_SIZE(100, 20);
@@ -30,7 +43,6 @@ public:
 	std::vector<GameLevel> Levels;
 	GLuint                 Level;
 
-
 	Game(GLuint width, GLuint height);
 	~Game();
 
@@ -39,5 +51,8 @@ public:
 	void ProcessInput(GLfloat dt);
 	void Update(GLfloat dt);
 	void Render();
+	void ResetLevel();
+	void ResetPlayer();
+	void DoCollisions();
 };
 
